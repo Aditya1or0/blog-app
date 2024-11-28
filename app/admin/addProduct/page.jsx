@@ -81,14 +81,7 @@ const Page = () => {
           hidden
           required
         />
-        <p className="text-xl mt-4">Author Image</p>
 
-        <input
-          onChange={(e) => setAuthorImageFile(e.target.files[0])}
-          type="file"
-          id="authorImage"
-          hidden
-        />
         <p className="text-xl mt-4">Blog Title</p>
         <input
           onChange={(e) => setData({ ...data, title: e.target.value })}
