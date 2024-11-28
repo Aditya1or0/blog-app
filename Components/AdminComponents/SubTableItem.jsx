@@ -16,7 +16,7 @@ const SubTableItem = ({ email, mongoId, date, deleteEmail }) => {
       </td>
       <td
         onClick={() => deleteEmail(mongoId)}
-        className="px-6 py-4 dark:text-red-500 cursor-pointer font-bold"
+        className="px-6 py-4 text-red-500 cursor-pointer font-bold"
       >
         X
       </td>

@@ -46,10 +46,6 @@ const Page = () => {
 
     formData.append("image", image);
 
-    for (let [key, value] of formData.entries()) {
-      // console.log(`${key}: ${value}`);
-    }
-
     try {
       const response = await axios.post("/api/blog", formData);
       if (response.data.success) {
