@@ -1,6 +1,7 @@
 import { assets } from "@/Assets/assets";
 import Image from "next/image";
 import React from "react";
+import { toast } from "react-toastify";
 
 const BlogTableItem = ({
   authorImg,
@@ -10,6 +11,10 @@ const BlogTableItem = ({
   deleteBlog,
   mongoId,
 }) => {
+  const handleClick = () => {
+    toast.error("You do not have permission to delete. ");
+  };
+
   const blogDate = new Date(date);
 
   return (
@@ -35,7 +40,7 @@ const BlogTableItem = ({
         {blogDate.toDateString()}
       </td>
       <td
-        onClick={() => deleteBlog(mongoId)}
+        onClick={handleClick}
         className="px-6 py-4 font-bold text-red-500 cursor-pointer"
       >
         X

@@ -1,6 +1,10 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const SubTableItem = ({ email, mongoId, date, deleteEmail }) => {
+  const handleClick = () => {
+    toast.error("You do not have permission to delete. ");
+  };
   const emailDate = new Date(date);
 
   return (
@@ -15,7 +19,7 @@ const SubTableItem = ({ email, mongoId, date, deleteEmail }) => {
         {emailDate.toDateString()}
       </td>
       <td
-        onClick={() => deleteEmail(mongoId)}
+        onClick={handleClick}
         className="px-6 py-4 text-red-500 cursor-pointer font-bold"
       >
         X
