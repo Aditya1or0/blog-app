@@ -8,9 +8,7 @@ import { toast } from "react-toastify";
 
 const Navbar = () => {
   const handleClick = () => {
-    toast.error(
-      "You do not have permission to write a blog. Only an admin can access this feature"
-    );
+    toast.error("You do not have permission to Login. ");
   };
   return (
     <div className="py-5 px-5 md:px-12 lg:px-28">
