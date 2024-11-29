@@ -62,4 +62,9 @@ You can access the admin panel directly by navigating to http://localhost:3000/a
 ### Email Subscription:
 - Users can subscribe to the email list via a form on the frontend. Once they submit their email, it is saved in the backend for future email notifications.
 
+###Contact
+If you have any questions, feel free to reach out to me 
+mail:adityapandit264@gmail.com
+
+
 ---
