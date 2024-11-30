@@ -7,13 +7,15 @@ const Sidebar = () => {
   return (
     <div className="flex flex-col bg-slate-100 dark:bg-[#1b1b1b]">
       <div className="px-2 sm:pl-14 py-3 border border-gray-500">
-        <Image
-          src={assets.logo}
-          width={120}
-          alt="logo"
-          priority
-          className="dark:invert"
-        />
+        <Link href="/">
+          <Image
+            src={assets.logo}
+            width={120}
+            alt="logo"
+            priority
+            className="dark:invert"
+          />
+        </Link>
       </div>
       <div className="w-full sm:w-80 h-[100vh] relative py-12 border border-gray-500">
         <div className="w-[80%] sm:w-[80%] h-[1px] bg-black absolute right-0 ">

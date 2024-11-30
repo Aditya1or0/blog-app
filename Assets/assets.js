@@ -1,4 +1,3 @@
-import home from "./home.png";
 import github_icon from "./github_icon.png";
 import linkedin_icon from "./linkedin_icon.png";
 import profile_icon from "./profile_icon.png";
@@ -11,7 +10,6 @@ import upload_area from "./upload_area.png";
 
 export const assets = {
   github_icon,
-  home,
   linkedin_icon,
   email_icon,
   profile_icon,
