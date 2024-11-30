@@ -57,7 +57,7 @@ To run this project locally, follow the steps below:
 6. Visit `http://localhost:3000` in your browser.
 
 ### Admin Panel Access:
-You can access the admin panel directly by navigating to http://localhost:3000/admin. Note that no login system has been implemented yet, but NextAuth will be integrated in the future to provide secure authentication for the admin panel.
+You can access the admin panel directly by navigating to http://localhost:3000/admin. Note that no login system has been implemented yet, but I will be integrate NextAuth in the future to provide secure authentication for the admin panel.
 
 ### Email Subscription:
 - Users can subscribe to the email list via a form on the frontend. Once they submit their email, it is saved in the backend for future email notifications.
