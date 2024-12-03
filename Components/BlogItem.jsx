@@ -39,14 +39,37 @@ const BlogItem = ({ title, description, category, image, id }) => {
           {!showFullDescription && (
             <button
               onClick={handleReadMoreClick}
-              className="inline-flex items-center py-2 font-semibold text-center text-black dark:text-white"
+              className={`
+               inline-flex 
+               items-center 
+               py-2 
+               font-semibold 
+               text-center 
+               text-black 
+               dark:text-white 
+               group 
+               transition-all 
+               duration-300 
+               ease-in-out 
+               transform 
+               hover:translate-x-1 
+               hover:scale-105 
+               hover:text-blue-600 
+               dark:hover:text-blue-400
+             `}
             >
               Read more
               <Image
                 src={assets.arrow}
                 alt=""
                 width={12}
-                className="ml-2 dark:invert"
+                className="
+                 ml-2 
+                 dark:invert 
+                 transition-transform 
+                 duration-300 
+                 group-hover:translate-x-1
+               "
               />
             </button>
           )}
