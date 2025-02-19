@@ -5,6 +5,7 @@ import { ModeToggle } from "./ThemeButton";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { toast } from "react-toastify";
+import { Badge } from "@/components/ui/badge";
 
 const Navbar = () => {
   const handleClick = () => {
@@ -25,6 +26,9 @@ const Navbar = () => {
           />
         </Link>
         <div className="flex items-center gap-3">
+          <Link href="/admin">
+            <Badge variant="destructive">Admin Panel</Badge>
+          </Link>
           <ModeToggle />
 
           <Button onClick={handleClick}>Get Started</Button>
