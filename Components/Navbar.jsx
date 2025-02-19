@@ -5,7 +5,7 @@ import { ModeToggle } from "./ThemeButton";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { toast } from "react-toastify";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "./ui/badge";
 
 const Navbar = () => {
   const handleClick = () => {
